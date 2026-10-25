@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #222;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background: #222;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1504674900247-0877df9cc836")
+        center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-content button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   ORDER
+========================= */
+
+.order-section {
+    background: #f5f5f5;
+}
+
+#orderForm {
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#orderForm input,
+#orderForm select {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+#orderForm input:focus,
+#orderForm select:focus {
+    border-color: #ff9800;
+}
+
+#orderForm button {
+    background: #222;
+    color: white;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#orderForm button:hover {
+    background: #ff9800;
+}
+
+#total {
+    margin-top: 30px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #222;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.food-card {
+    width: 300px;
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+.food-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.food-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.food-card strong {
+    font-size: 22px;
+    color: #ff9800;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    background: #222;
+    color: white;
+}
+
+#about p {
+    max-width: 650px;
+    margin: auto;
+
+    font-size: 18px;
+    color: #ddd;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav h1 {
+        font-size: 26px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .food-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+/* =========================
+   ADD TO CART
+========================= */
+
+.add-cart {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #ff9800;
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Cart */
+
+.cart {
+    max-width: 600px;
+
+    margin: 60px auto 0;
+
+    padding: 30px;
+
+    background: #f5f5f5;
+
+    border-radius: 15px;
+}
+
+.cart h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.cart-item {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    padding: 5px 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#cartTotal {
+    margin-top: 25px;
+}
+#whatsappBtn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #25D366;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#whatsappBtn:hover {
+    transform: translateY(-2px);
+}

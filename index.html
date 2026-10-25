@@ -1,0 +1,332 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodHub Restaurant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header>
+
+        <nav>
+
+            <h1>FoodHub</h1>
+
+            <ul>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h2>
+                Delicious Food, Made With Love
+            </h2>
+
+            <p>
+                Fresh ingredients, amazing taste and unforgettable meals.
+            </p>
+
+            <button id="orderBtn">
+                Order Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ORDER SECTION
+    ========================== -->
+
+    <section id="order" class="order-section">
+
+        <h2>
+            Place Your Order
+        </h2>
+
+
+        <form id="orderForm">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <select id="food">
+
+                <option value="250">
+                    Classic Burger - ৳250
+                </option>
+
+                <option value="450">
+                    Cheese Pizza - ৳450
+                </option>
+
+                <option value="300">
+                    Fried Chicken - ৳300
+                </option>
+
+            </select>
+
+
+            <input
+                type="number"
+                id="quantity"
+                placeholder="Quantity"
+                min="1"
+                value="1"
+                required
+            >
+
+
+            <button type="submit">
+                Calculate Order
+            </button>
+
+        </form>
+
+
+        <p id="total"></p>
+
+    </section>
+
+
+    <!-- =========================
+         MENU SECTION
+    ========================== -->
+
+    <section id="menu">
+
+        <h2>
+            Our Popular Menu
+        </h2>
+
+
+        <div class="menu-container">
+
+
+            <!-- BURGER -->
+
+            <div class="food-card">
+
+                <h3>
+                    🍔 Classic Burger
+                </h3>
+
+                <p>
+                    Juicy beef burger with fresh vegetables.
+                </p>
+
+                <strong>
+                    ৳250
+                </strong>
+
+
+                <button
+                    class="add-cart"
+                    data-name="Classic Burger"
+                    data-price="250">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+            <!-- PIZZA -->
+
+            <div class="food-card">
+
+                <h3>
+                    🍕 Cheese Pizza
+                </h3>
+
+                <p>
+                    Hot pizza loaded with delicious cheese.
+                </p>
+
+                <strong>
+                    ৳450
+                </strong>
+
+
+                <button
+                    class="add-cart"
+                    data-name="Cheese Pizza"
+                    data-price="450">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+            <!-- CHICKEN -->
+
+            <div class="food-card">
+
+                <h3>
+                    🍗 Fried Chicken
+                </h3>
+
+                <p>
+                    Crispy chicken with our special seasoning.
+                </p>
+
+                <strong>
+                    ৳300
+                </strong>
+
+
+                <button
+                    class="add-cart"
+                    data-name="Fried Chicken"
+                    data-price="300">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =========================
+             SHOPPING CART
+        ========================== -->
+
+        <div class="cart">
+
+            <h2>
+                🛒 Your Cart
+            </h2>
+
+
+            <div id="cartItems">
+
+                <p>
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+
+            <h3 id="cartTotal">
+                Total: ৳0
+            </h3>
+            <button id="whatsappBtn">
+                🟢 Order on WhatsApp
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+
+    <section id="about">
+
+        <h2>
+            About Us
+        </h2>
+
+        <p>
+            FoodHub is a local restaurant serving delicious food
+            made from fresh ingredients.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section id="contact">
+
+        <h2>
+            Contact Us
+        </h2>
+
+        <p>
+            📞 017XXXXXXXX
+        </p>
+
+        <p>
+            📍 Dhaka, Bangladesh
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 FoodHub. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
